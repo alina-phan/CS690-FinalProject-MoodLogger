@@ -1,1 +1,1 @@
-# CS690-FinalProject-MoodLogger
+The system shall help users like Emma track daily activities, moods, sleep, and environmental factors to find trends that influence emotional well-being.
