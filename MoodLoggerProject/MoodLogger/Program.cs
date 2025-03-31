@@ -7,31 +7,33 @@ namespace MoodLogger
     {
         static void Main(string[] args)
         {
-            var dataStore = new DataStore();
-            var logger = new EntryLogger(dataStore);
+            var logManager = new LogManager();
+            var tracker = new WellnessTracker(logManager);
 
             while (true)
             {
-                Console.WriteLine("=== Emma's Mood Logger ===");
-                Console.WriteLine("1. Log new entry");
-                Console.WriteLine("2. View all entries");
+                Console.WriteLine("\n🌿 Welcome to Emma's Wellness Tracker 🌿");
+                Console.WriteLine("1. Record a new log");
+                Console.WriteLine("2. View all past logs");
                 Console.WriteLine("3. Exit");
-                Console.Write("Choose an option: ");
+                Console.Write("Choose an option (1-3): ");
 
-                string choice = Console.ReadLine();
+                string input = Console.ReadLine();
+                Console.WriteLine();
 
-                switch (choice)
+                switch (input)
                 {
                     case "1":
-                        logger.LogEntry();
+                        tracker.RecordDailyLog();
                         break;
                     case "2":
-                        logger.ViewEntries();
+                        tracker.ShowAllLogs();
                         break;
                     case "3":
+                        Console.WriteLine("Goodbye! Stay well. 🌟");
                         return;
                     default:
-                        Console.WriteLine("Invalid option.\n");
+                        Console.WriteLine("❗ Invalid option. Please choose 1, 2, or 3.\n");
                         break;
                 }
             }

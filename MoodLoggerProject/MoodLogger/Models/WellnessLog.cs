@@ -1,6 +1,6 @@
 namespace MoodLogger.Models
 {
-    public class Entry
+    public class WellnessLog
     {
         public DateTime Date { get; set; } = DateTime.Now;
         public string Mood { get; set; }
