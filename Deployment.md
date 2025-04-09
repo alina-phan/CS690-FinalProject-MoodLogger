@@ -30,7 +30,7 @@ MoodLogger.exe
 
 The app will launch in your terminal and begin logging based on your input.
 
-🔍 What This App Does
+## 🔍 What This App Does
 
 Emma's Wellness Tracker helps users like Emma log and reflect on:
 
@@ -46,13 +46,13 @@ Emma's Wellness Tracker helps users like Emma log and reflect on:
 
 All entries are saved locally to logs.json
 
-📝 Troubleshooting
+## 📝 Troubleshooting
 
 - Nothing happens when I click the .exe: Try right-clicking → “Run as Administrator”
 
 - Blocked by Windows Defender?: Click “More Info” → “Run Anyway” (this happens for unsigned apps)
 
-🧪 Want to Build It Yourself?
+## 🧪 Want to Build It Yourself?
 
 If you'd rather build from source:
 
