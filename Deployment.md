@@ -26,6 +26,8 @@ This document explains how to run the CS690 Final Project – **MoodLogger** –
 
 ```bash
 MoodLogger.exe
+```
+
 The app will launch in your terminal and begin logging based on your input.
 
 🔍 What This App Does
