@@ -1,6 +1,8 @@
 # 🌤️ CS690 Final Project – MoodLogger
 
-This project is a wellness tracking console application designed to help users like **Emma** understand how various daily factors — such as **mood**, **sleep**, **diet**, **activities**, and **weather** — influence their emotional well-being over time.
+![.NET Tests](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/actions/workflows/dotnet-test.yml/badge.svg)
+
+This project is a wellness tracking console application...
 
 ---
 
