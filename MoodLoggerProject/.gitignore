@@ -1,0 +1,17 @@
+# Build artifacts
+bin/
+obj/
+publish/
+*.zip
+*.exe
+*.pdb
+
+# User-specific files
+.vscode/
+.idea/
+*.user
+*.suo
+
+# Logs
+*.log
+logs.json

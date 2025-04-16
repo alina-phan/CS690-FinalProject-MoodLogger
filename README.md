@@ -118,3 +118,41 @@ CS690 - Software Architecture & Design
 Ball State University
 
 ---
+
+## 🛠️ Development Notes
+
+To open and run this project in **Visual Studio**:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/alina-phan/CS690-FinalProject-MoodLogger.git
+   ```
+
+2. Open the solution file:
+`MoodLoggerProject.sln`
+
+This will load both the main application and the test project.
+
+## 📁 Projects included:
+
+- MoodLogger – main console app (C#)
+
+- MoodLogger.Tests – xUnit test project
+
+
+---
+
+## 🚀 2. Optional: Automate Tests via Terminal
+
+Now that everything is tracked by the solution file, you can run **all tests** across the solution from the root like this:
+
+```bash
+dotnet test MoodLoggerProject.sln
+```
+This will:
+
+- Build the solution
+
+- Run all xUnit tests in MoodLogger.Tests
+
+- Print a pass/fail summary
