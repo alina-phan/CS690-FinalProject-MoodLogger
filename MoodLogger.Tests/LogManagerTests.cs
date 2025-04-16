@@ -1,34 +1,73 @@
+using System;
+using System.Collections.Generic;
+using System.IO;
 using Xunit;
 using MoodLogger.Data;
 using MoodLogger.Models;
-using System.Collections.Generic;
 
 public class LogManagerTests
 {
+    private const string TestFilePath = "test-logs.json";
+
+    private void CleanTestFile()
+    {
+        if (File.Exists(TestFilePath))
+            File.Delete(TestFilePath);
+    }
+
     [Fact]
     public void AddLog_ShouldAddLogToList()
     {
         // Arrange
-        var logManager = new LogManager();
-        var log = new WellnessLog { Mood = "Happy", SleepHours = "7" };
+        CleanTestFile();
+        var manager = new LogManager(TestFilePath);
+        var log = new WellnessLog
+        {
+            Mood = "Happy",
+            SleepHours = "8",
+            Activities = "Walk",
+            Food = "Salad",
+            Weather = "Sunny"
+        };
 
         // Act
-        logManager.AddLog(log);
-        var logs = logManager.GetAllLogs();
+        manager.AddLog(log);
+        var allLogs = manager.GetAllLogs();
 
         // Assert
-        Assert.Contains(logs, l => l.Mood == "Happy" && l.SleepHours == "7");
+        Assert.Single(allLogs);
+        Assert.Equal("Happy", allLogs[0].Mood);
+
+        CleanTestFile();
     }
 
     [Fact]
     public void GetAllLogs_ShouldReturnListOfLogs()
     {
         // Arrange
-        var logManager = new LogManager();
-        var initialLogs = logManager.GetAllLogs();
+        CleanTestFile();
+        var sampleData = """
+        [
+            {
+                "Mood": "Calm",
+                "SleepHours": "7",
+                "Activities": "Yoga",
+                "Food": "Soup",
+                "Weather": "Cloudy"
+            }
+        ]
+        """;
 
-        // Act & Assert
-        Assert.NotNull(initialLogs);
-        Assert.IsType<List<WellnessLog>>(initialLogs);
+        File.WriteAllText(TestFilePath, sampleData);
+        var manager = new LogManager(TestFilePath);
+
+        // Act
+        var logs = manager.GetAllLogs();
+
+        // Assert
+        Assert.Single(logs);
+        Assert.Equal("Calm", logs[0].Mood);
+
+        CleanTestFile();
     }
 }

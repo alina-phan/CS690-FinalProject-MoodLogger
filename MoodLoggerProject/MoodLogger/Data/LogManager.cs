@@ -5,11 +5,13 @@ namespace MoodLogger.Data
 {
     public class LogManager
     {
-        private const string FilePath = "logs.json";
+        private readonly string _filePath;
         private List<WellnessLog> logs;
 
-        public LogManager()
+        // Constructor with optional file path (used for testing)
+        public LogManager(string filePath = "logs.json")
         {
+            _filePath = filePath;
             logs = LoadLogs();
         }
 
@@ -28,16 +30,24 @@ namespace MoodLogger.Data
         {
             var options = new JsonSerializerOptions { WriteIndented = true };
             var json = JsonSerializer.Serialize(logs, options);
-            File.WriteAllText(FilePath, json);
+            File.WriteAllText(_filePath, json);
         }
 
         private List<WellnessLog> LoadLogs()
         {
-            if (!File.Exists(FilePath))
+            if (!File.Exists(_filePath))
                 return new List<WellnessLog>();
 
-            string json = File.ReadAllText(FilePath);
-            return JsonSerializer.Deserialize<List<WellnessLog>>(json) ?? new List<WellnessLog>();
+            try
+            {
+                string json = File.ReadAllText(_filePath);
+                return JsonSerializer.Deserialize<List<WellnessLog>>(json) ?? new List<WellnessLog>();
+            }
+            catch (JsonException)
+            {
+                // Return an empty list if JSON is malformed
+                return new List<WellnessLog>();
+            }
         }
     }
 }
