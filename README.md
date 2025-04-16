@@ -71,6 +71,46 @@ Emma logs her mood and later reviews trends like:
 
 ---
 
+## ✅ Implemented Features
+
+Below is a summary of all features and enhancements tracked through GitHub Issues and completed for this project.
+
+### 🔧 Functional Features
+
+| Feature | Description |
+|--------|-------------|
+| Mood Logging | Users can log their mood for the day |
+| Sleep Logging | Users can log their sleep hours |
+| Daily Activities | Users can log daily activities |
+| Food Intake | Users can log their food intake |
+| Weather Logging | Users can log current weather conditions |
+| View Past Logs | Users can view historical mood/wellness entries |
+| Data Persistence | Entries persist across sessions via file saving |
+
+---
+
+### ⚙️ Non-Functional Requirements
+
+| Feature | Description |
+|--------|-------------|
+| Performance | App responds within 2 seconds |
+| Modular Codebase | Code organized into structured, reusable classes |
+| GitIgnore Setup | Data output files excluded from Git version control |
+
+---
+
+### 🧪 Testing & Deployment
+
+| Feature | Description |
+|--------|-------------|
+| Unit Testing | Core functions are validated with xUnit tests |
+| Deployment.md | Contains setup instructions and usage guide |
+
+📂 For more detail, see the [Wiki Issue Tracker Summary](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/wiki/Issue-Tracker-Summary)
+
+
+---
+
 ## 👥 Author
 
 ** Alina Phan**  
@@ -78,5 +118,3 @@ CS690 - Software Architecture & Design
 Ball State University
 
 ---
-
-
