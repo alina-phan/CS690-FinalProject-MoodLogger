@@ -5,6 +5,8 @@ publish/
 *.zip
 *.exe
 *.pdb
+MoodLogger.Tests/bin/
+MoodLogger.Tests/obj/
 
 # User-specific files
 .vscode/
