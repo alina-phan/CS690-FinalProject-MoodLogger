@@ -20,3 +20,4 @@ MoodLoggerProject/logs.json
 # Logs
 *.log
 logs.json
+.DS_Store
