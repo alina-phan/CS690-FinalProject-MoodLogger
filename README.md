@@ -16,7 +16,7 @@ That’s where this app comes in.
 
 ## 🎯 Business Requirement
 
-> Develop a console-based C# application using .NET 8 that enables users to track and review lifestyle-related data (mood, sleep, food, activities, and weather) with the goal of identifying patterns that affect emotional health.
+> Develop a console-based C# application using .NET 9 that enables users to track and review lifestyle-related data (mood, sleep, food, activities, and weather) with the goal of identifying patterns that affect emotional health.
 
 ---
 
@@ -46,7 +46,7 @@ Emma logs her mood and later reviews trends like:
 ## ⚙️ Technologies
 
 - 💻 **C#**
-- 🧱 **.NET 8 SDK**
+- 🧱 **.NET 9 SDK**
 - 🖥️ **Console-based UI**
 - 📁 **File-based logging (JSON or TXT)**
 
@@ -54,7 +54,7 @@ Emma logs her mood and later reviews trends like:
 
 ## 📌 Constraints
 
-- Must use .NET Version 8
+- Must use .NET Version 9
 - Console-based interface only (no GUI)
 - Functional logging for all use cases
 - Must support persistent logs across sessions
