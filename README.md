@@ -1,6 +1,6 @@
 # 🌤️ CS690 Final Project – MoodLogger
 
-![.NET Tests](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/actions/workflows/dotnet-test.yml/badge.svg?refresh=1)
+![.NET Tests](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/actions/workflows/dotnet-test.yml/badge.svg?nocache=latest)
 
 This project is a wellness tracking console application...
 
