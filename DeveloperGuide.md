@@ -19,9 +19,10 @@ Emma's Wellness Tracker is a .NET 9 console application that allows users to log
 - **Framework**: xUnit with Coverlet for code coverage.
 - **Test Files**: `LogManagerTests.cs`, `WellnessTrackerTests.cs`
 - **Run Command**:
-```bash
-dotnet test
-``` 
+  ```bash
+  dotnet test
+  ```
+- ✅ All tests pass as of final commit.
 
 ---
 
@@ -30,9 +31,21 @@ dotnet test
 - No mood trend graphing or CSV export.
 - Input validation is minimal (happy path assumed).
 
----
+--- 
 
 ## 📦 Dependencies
 - .NET 9.0
 - System.Text.Json
 - xUnit, coverlet.collector
+
+## 🚀 Getting Started
+To run locally:
+```bash
+cd MoodLoggerProject/MoodLogger
+dotnet run
+```
+To run tests:
+```bash
+cd CS690-FinalProject-MoodLogger
+dotnet test
+```
