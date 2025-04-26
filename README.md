@@ -158,3 +158,22 @@ This will:
 - Run all xUnit tests in MoodLogger.Tests
 
 - Print a pass/fail summary
+
+
+# Missing Points and Maintenance Notes
+
+## 🚧 Functionality Gaps
+- **Weather influence tracking**: Planned but not fully integrated into mood analysis.
+- **Graphical trend/reporting features**: Not implemented due to console limitations; future versions may include charts or export to CSV.
+- **User data segmentation**: Currently supports one user/session. No multi-user support.
+- **Error recovery**: Limited handling for invalid inputs or corrupted `logs.json`.
+
+## 🧪 Testing Gaps
+- Unit tests focus on `WellnessTracker` and `LogManager`.
+- **No integration or end-to-end tests** for full logging flow.
+- **Console interaction** not testable currently (due to lack of decoupled UI logic).
+
+## 🔧 Maintenance Suggestions
+- Refactor input/output into a `UserInterface` class to allow testing.
+- Add CSV/JSON export and CLI args support for batch logging.
+- Consider GUI version (WinForms/WPF) or web front-end in future iterations.
