@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MoodLoggerProject\MoodLogger\MoodLogger.csproj" />
+    <ProjectReference Include="../MoodLoggerProject/MoodLogger.csproj" />
   </ItemGroup>
 
 </Project>
