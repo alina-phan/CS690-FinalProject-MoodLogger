@@ -3,6 +3,7 @@
 ![.NET Tests](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/actions/workflows/dotnet-test.yml/badge.svg?nocache=latest)
 
 This project is a wellness tracking console application...
+This repository includes source code, unit tests, and release binaries for both Windows and macOS.
 
 ---
 
@@ -69,7 +70,6 @@ Emma logs her mood and later reviews trends like:
 | Sleep Logging | ✅ Implemented |
 | Activity Logging | ✅ Implemented |
 | Weather Logging | ✅ Implemented |
-| Mood Logging + Trends | 🚧 In Progress |
 
 ---
 
@@ -108,14 +108,14 @@ Below is a summary of all features and enhancements tracked through GitHub Issue
 | Unit Testing | Core functions are validated with xUnit tests |
 | Deployment.md | Contains setup instructions and usage guide |
 
-📂 For more detail, see the [Wiki Issue Tracker Summary](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/wiki/Issue-Tracker-Summary)
+📂 See [Testing Wiki](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/wiki/🧪-Unit-Testing–-Emma’s-Wellness-Tracker) and [Deployment Guide](https://github.com/alina-phan/CS690-FinalProject-MoodLogger/wiki/🚀-Deployment-Guide-–-Emma's-Wellness-Tracker) for full instructions.
 
 
 ---
 
 ## 👥 Author
 
-** Alina Phan**  
+**Alina Phan**  
 CS690 - Software Architecture & Design  
 Ball State University
 
